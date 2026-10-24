@@ -21,11 +21,11 @@ Prof. Somak Raychaudhury & Shraddha Karve
 ## Quick start
 
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/OderintV/caterpillar-growth>
 cd caterpillar-growth
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+python3 -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-python plot_growth.py
+python3 plot_growth.py
 ```
 
 Figures are written to `figures/`. Optional arguments: `--csv path/to/file.csv` and `--out output_folder`.
@@ -33,7 +33,7 @@ Figures are written to `figures/`. Optional arguments: `--csv path/to/file.csv` 
 ## Files
 
 - `observations.csv` – the measurements and notes (one row per observation)
-- `plot_growth.py` – loads the CSV and draws both graphs
+- `plot_growth.py` – loads the CSV and draws all three graphs
 - `requirements.txt` – Python dependencies (matplotlib, pandas)
 
 ## `observations.csv` columns
@@ -53,6 +53,5 @@ Length change is computed in code from `length_mm`, not stored in the CSV.
 ## Notes and limitations
 
 - **No measurements 2–12 Oct.** The caterpillar was with the gardener during the midterm break. The 13 Oct reading (58 mm) is 38 mm above the last reading (20 mm), but when that growth happened is unknown. The graphs mark this gap clearly rather than implying steady growth.
-- **Day numbering.** From 23 Sep onward, the journal's day labels run 1 day behind the calendar, and 2 days behind from 16 Oct (e.g. 13 Oct is labelled Day 36 but is Day 37 counting from 7 Sep; 17 Oct is labelled Day 39 but is Day 41). `day_number` uses the calendar; the journal's labels are kept in `journal_day_label`.
 - **Uneven spacing.** Observations were 1–3 days apart, so bar heights in the growth-change graph are not per-day rates; use the growth-rate graph to compare intervals.
 - **Cause of death was not determined.** Pupation was not observed.
