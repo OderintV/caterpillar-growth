@@ -53,5 +53,5 @@ Length change is computed in code from `length_mm`, not stored in the CSV.
 ## Notes and limitations
 
 - **No measurements 2–12 Oct.** The caterpillar was with the gardener during the midterm break. The 13 Oct reading (58 mm) is 38 mm above the last reading (20 mm), but when that growth happened is unknown. The graphs mark this gap clearly rather than implying steady growth.
-- **Uneven spacing.** Observations were 1–3 days apart, so bar heights in the growth-change graph are not per-day rates; use the growth-rate graph to compare intervals.
+- **Uneven spacing.** Observations were 1-3 days apart, so bar heights in the growth change graph are not per day rates; use the growth rate graph to compare intervals.
 - **Cause of death was not determined.** Pupation was not observed.
